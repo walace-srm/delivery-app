@@ -13,10 +13,9 @@ export interface Transaction {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PedidoService {
-
   pedidoURI: string = '';
   formularioURI: string = '';
 
@@ -27,17 +26,27 @@ export class PedidoService {
   horizontalPosition: MatSnackBarHorizontalPosition = 'right';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
 
-
   openSnackBar(msg: string) {
     this._snackBar.open(msg, 'X', {
-      duration: 2000,
+      duration: 3000,
       horizontalPosition: this.horizontalPosition,
       verticalPosition: this.verticalPosition,
     });
   }
 
   getPedidoValues(item: string, price: number) {
-    this.transactions.push({item: item, price: price, num: this.transactions.length});
+    this.transactions.push({
+      item: item,
+      price: price,
+      num: this.transactions.length,
+    });
   }
 
+  getDetailsValues(item: string, price: number) {
+    this.transactions.push({
+      item: item,
+      price: price,
+      num: this.transactions.length,
+    });
+  }
 }

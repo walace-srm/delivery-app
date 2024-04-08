@@ -5,6 +5,7 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import { ContentComponent } from './content.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -16,7 +17,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatCardModule,
     MatIconModule,
     MatTabsModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    FlexLayoutModule
   ],
   exports: [ContentComponent]
 })

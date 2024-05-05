@@ -6,7 +6,7 @@
   <mat-tab>
     <ng-template mat-tab-label>
       <mat-icon class="example-tab-icon">local_pizza</mat-icon>
-      Pizzas
+      Hambúrguer
     </ng-template>
     <div fxLayout="row wrap" fxLayoutAlign="start center" style="padding: 2%">
       <ng-container *ngFor="let pizza of pizzasArray" style="margin: 0.5%">
@@ -15,6 +15,7 @@
           fxFlex="0 1 calc(33.3% - 22px)"
           fxFlex.lt-md="0 1 calc(50% - 22px)"
           fxFlex.lt-sm="100%"
+          (click)="openDetails(pizza)"
         >
           <mat-card-header>
             <div mat-card-avatar class="avatar pizza-header-image"></div>
@@ -36,7 +37,7 @@
             <button
               mat-raised-button
               class="bg-yellow color-gray btn-add btn"
-              (click)="addPizzaPedido(pizza.id)"
+              (click)="addPizzaPedido(pizza.id); $event.stopPropagation()"
             >
               <mat-icon class="color-pink">add_circle</mat-icon>
               <span>Adicionar ao Pedido</span>

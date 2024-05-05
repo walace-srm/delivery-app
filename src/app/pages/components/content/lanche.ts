@@ -1,0 +1,98 @@
+export const LANCHE = {
+    pizzas: [
+      {
+        id: 1,
+        name: 'X-Burguer',
+        price: 8,
+        ingredients: 'Pão, carne, alface, tomate, milho, ervilha, azeitona, ovo de codorna, batata palha, maionese, ketchup, mostarda e cheddar.',
+        img: 'https://firebasestorage.googleapis.com/v0/b/store-web-4991a.appspot.com/o/uploads%2Fhamburguer.jpg?alt=media&token=e6d7e494-4be9-4a77-989b-82e8e2464b9b',
+      },
+      {
+        id: 2,
+        name: 'X-Tudo',
+        price: 12,
+        ingredients: 'Pão, carne, queijo, presunto, ovo, bacon, linguiça, alface, tomate, minlho, ervilha, azeitona, ovo de codorna, batata palha, maionese, ketchup, mostarda e cheddar.',
+        img: 'https://firebasestorage.googleapis.com/v0/b/store-web-4991a.appspot.com/o/uploads%2Fhamburguer.jpg?alt=media&token=e6d7e494-4be9-4a77-989b-82e8e2464b9b',
+      },
+      {
+        id: 3,
+        name: 'X-Bacon',
+        price: 14,
+        ingredients: 'Pão, carne, queijo, presunto, ovo, + bacon, linguiça, alface, tomate, minlho, ervilha, azeitona, ovo de codorna, batata palha, maionese, ketchup, mostarda e cheddar.',
+        img: 'https://firebasestorage.googleapis.com/v0/b/store-web-4991a.appspot.com/o/uploads%2Fhamburguer.jpg?alt=media&token=e6d7e494-4be9-4a77-989b-82e8e2464b9b',
+      },
+      {
+        id: 4,
+        name: 'Big',
+        price: 17,
+        ingredients: 'Pão, 2 carnes, 2 queijos, 2 presuntos, 2 ovos, bacon, linguiça, alface, tomate, minlho, ervilha, azeitona, ovo de codorna, batata palha, maionese, ketchup, mostarda e cheddar.',
+        img: 'https://firebasestorage.googleapis.com/v0/b/store-web-4991a.appspot.com/o/uploads%2Fhamburguer.jpg?alt=media&token=e6d7e494-4be9-4a77-989b-82e8e2464b9b',
+      },
+      {
+        id: 5,
+        name: 'Tri',
+        price: 20,
+        ingredients: 'Pão, 3 carnes, 3 queijos, 3 presuntos, 3 ovos, bacon, linguiça, alface, tomate, minlho, ervilha, azeitona, ovo de codorna, batata palha, maionese, ketchup, mostarda e cheddar.',
+        img: 'https://firebasestorage.googleapis.com/v0/b/store-web-4991a.appspot.com/o/uploads%2Fhamburguer.jpg?alt=media&token=e6d7e494-4be9-4a77-989b-82e8e2464b9b',
+      },
+      {
+        id: 6,
+        name: 'Quarteto',
+        price: 25,
+        ingredients: 'Pão, 4 carnes, 4 queijos, 4 presuntos, 4 ovos, bacon, linguiça, alface, tomate, minlho, ervilha, azeitona, ovo de codorna, batata palha, maionese, ketchup, mostarda e cheddar.',
+        img: 'https://firebasestorage.googleapis.com/v0/b/store-web-4991a.appspot.com/o/uploads%2Fhamburguer.jpg?alt=media&token=e6d7e494-4be9-4a77-989b-82e8e2464b9b',
+      },
+    ],
+    bebidas: [
+      {
+        id: 1,
+        name: 'Coca-cola',
+        price: 6.5,
+        volume: '2 Litros',
+        img: 'https://lh3.googleusercontent.com/pw/ACtC-3eLQv8QVPt-SaiT2T4a_vogOcBG1LGfI22-_mjgJymNoOmyeWg4NRTfdMGw3E1lLIWEvZACKC3-IyiLI9TOF09O_sYVpf-JsQV4DrjfAUx5LYuOKcuB-d6Ebw9l239TMU1QHt1VWCRML0r1r3Ky705l=w486-h648-no?authuser=0',
+      },
+      {
+        id: 2,
+        name: 'Guaraná',
+        price: 6,
+        volume: '2 Litros',
+        img: 'https://lh3.googleusercontent.com/pw/ACtC-3fYrl0u11NO1zzGQTO9UDlpsHAP5Bvt52Rw_kQSVSHDoIfcngn09CDPVKx09lz89fUH7NIr2HhlMDJR5SQhLZ6GP-C7kiyO2m6cU9XkEnchjj24MYfJu7k_3KSDvPs48Jxt5DLse-9jMy6--V_4kg0H=w708-h943-no?authuser=0',
+      },
+      {
+        id: 4,
+        name: 'Coca-cola',
+        price: 4.5,
+        volume: '1 Litro',
+        img: 'https://lh3.googleusercontent.com/pw/ACtC-3eLQv8QVPt-SaiT2T4a_vogOcBG1LGfI22-_mjgJymNoOmyeWg4NRTfdMGw3E1lLIWEvZACKC3-IyiLI9TOF09O_sYVpf-JsQV4DrjfAUx5LYuOKcuB-d6Ebw9l239TMU1QHt1VWCRML0r1r3Ky705l=w486-h648-no?authuser=0',
+      },
+      {
+        id: 6,
+        name: 'Fanta Uva',
+        price: 5.5,
+        volume: '2 Litros',
+        img: 'https://lh3.googleusercontent.com/pw/ACtC-3czfOaqgzfsdKGY_eXJ3GcRqO_qANuW7I4RYu_dlkLRV4tS2TeWh5PSoAyLz1luTBkADrrOwYAVnRULGuPHPkpLNunOwIu5eFOrS_G3SZRaRP39KsVhhQpXNd-nuGbwrAhN5Ff75tgyOAK9ney_pob5=w708-h943-no?authuser=0',
+      },
+      {
+        id: 7,
+        name: 'Fanta Laranja',
+        price: 5.5,
+        volume: '2 Litros',
+        img: 'https://lh3.googleusercontent.com/pw/ACtC-3dJUuJlv1fnqhaEAo-l3zQzzmUmf4SO4aHzz_DwE1EhtyCLNCV25ubR4EFIsXH7mSVu2J4EivUI2kHE36_7_EfIKZyb0HQ3YDBzh5f28911fIEs-OOEj-HmXT3dbQF180u85HbKoj44h_I5I0tH7whD=w708-h943-no?authuser=0',
+      },
+      {
+        id: 3,
+        name: 'Pepsi',
+        price: 3,
+        volume: '350ml',
+        img: 'https://lh3.googleusercontent.com/pw/ACtC-3d-Bu85HstdK8oHyTfcbIEhqmugjR7CYt3-HgJw-LVQr5_fTv7CkjQZfXIzt6272j2U7sktnRJxiyFp8crlR4kM7qweG5yEUWz9T2qdfGB-WDDtzdnGtcetVnGuiYFAhm6u43uYXyUV9Pp7Rv1iXZl-=w800-h600-no?authuser=0',
+      },
+      {
+        id: 5,
+        name: 'Fanta Laranja',
+        price: 3,
+        volume: '350ml',
+        img: 'https://lh3.googleusercontent.com/pw/ACtC-3dA25dLiQlA5oIMiszueTe44CU4BoGfyQIbKb67RCU5mQjQqO9tw8AzLDTJZwWPccXHmNJB5UlnyCyVVO7ulkoqKmGtq5bd_h9wA77BryLRTRqlnSbQlMmGR1swUvRn3SC_pIBpv9bqN4EDLzeyo3Gg=w840-h630-no?authuser=0',
+      },
+    ],
+  };
+  

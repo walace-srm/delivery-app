@@ -13,7 +13,7 @@ import {
   providedIn: 'root'
 })
 export class ProdutosService {
-  private dbPath = 'product';
+  private dbPath = 'lanche';
   productRef!: AngularFirestoreCollection<any>;
 
   private readonly API = 'https://script.google.com/macros/s/AKfycbz4bzrd6iGG8G9J1hTsvsjDk850Rpe97iQk9ciMk2-mTdRoENJO/exec';

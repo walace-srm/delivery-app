@@ -71,7 +71,7 @@ export class PedidoFormComponent implements OnInit {
       let textoURI = encodeURIComponent(texto);
 
       window.open(
-        `https://api.whatsapp.com/send?phone=5521964353034&text=${textoURI}${this.pedidoService.pedidoURI}`
+        `https://api.whatsapp.com/send?phone=5521998953013&text=${textoURI}${this.pedidoService.pedidoURI}`
       );
       this.data.closeAll();
     } else {

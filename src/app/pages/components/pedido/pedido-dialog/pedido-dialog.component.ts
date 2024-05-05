@@ -15,7 +15,6 @@ export class PedidoDialogComponent implements OnInit {
   transactions = this.pedidoService.transactions;
 
   ngOnInit(): void {
-    console.log(this.transactions);
   }
 
   displayedColumns: string[] = ['item', 'price', 'action'];

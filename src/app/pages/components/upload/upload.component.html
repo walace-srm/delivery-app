@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-content>
+      <p>upload works!</p>
+      <form (submit)="onSubmit()">
+        <mat-form-field>
+          <mat-label>Upload an image</mat-label>
+          <input type="file" matInput (change)="onFileSelected($event)">
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit">Upload</button>
+      </form>
+    </mat-card-content>
+  </mat-card>

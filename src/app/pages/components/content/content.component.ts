@@ -6,6 +6,7 @@ import { Bebida } from '../../interfaces/bebida/bebida.model';
 import { MOCK } from './mock';
 import { MatDialog } from '@angular/material/dialog';
 import { ProductDetailsComponent } from '../product-details/product-details.component';
+import { LANCHE } from './lanche';
 
 @Component({
   selector: 'app-content',
@@ -24,7 +25,7 @@ export class ContentComponent implements OnInit {
 
   ngOnInit(): void {
     //this.getPizzas();
-    //this.produtosService.create(MOCK);
+    //this.produtosService.create(LANCHE);
     this.produtosService
       .getAll()
       .snapshotChanges()
@@ -33,7 +34,6 @@ export class ContentComponent implements OnInit {
           let item = change.payload.doc.data();
           this.pizzasArray = item.pizzas;
           this.bebidasArray = item.bebidas;
-          console.log(change.payload.doc.data());
         });
       });
   }
@@ -67,7 +67,6 @@ export class ContentComponent implements OnInit {
   }
 
   openDetails(pizza: any) {
-    console.log(pizza);
     const dialogRef = this.dialog.open(ProductDetailsComponent, {
       data: pizza,
     });
